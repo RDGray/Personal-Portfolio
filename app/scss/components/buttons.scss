@@ -1,0 +1,47 @@
+@use '../util'as *;
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff !important;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+
+  &:hover {
+    background: var(--first-color-alt);
+    transition: 0.3s;
+  }
+
+  &__icon {
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: 0.3s;
+  }
+  &--flex {
+    display: inline-flex;
+    align-items: center;
+  }
+  &--small {
+    padding: 0.75rem 1rem;
+  }
+
+  &--link {
+    padding: 0;
+    background-color: transparent;
+    color: var(--first-color) !important;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--first-color-alt) !important;
+    }
+  }
+  &--white {
+    background-color: #fff;
+    color: var(--first-color) !important;
+
+    &:hover {
+      background-color: var(--input-color) !important;
+    }
+  }
+}

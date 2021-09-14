@@ -1,0 +1,101 @@
+@use '../util' as *;
+
+.nav {
+  max-width: rem(968);
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    @include breakpoint-down(medium) {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--body-color);
+      padding: 2rem 1.5rem 4rem;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 1.5rem 1.5rem 0 0;
+      transition: 0.3s;
+    }
+  }
+
+  &__list {
+    //grid was put in class
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--s-font-size);
+    font-weight: var(--font-medium);
+
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+  }
+
+  &__logo {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+
+  &__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+
+    &:hover {
+      color: var(--first-color-alt);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+}
+
+//Theme dark/light
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--first-color);
+  }
+}
+
+//Nav show menu
+.show-menu {
+  bottom: 0;
+}

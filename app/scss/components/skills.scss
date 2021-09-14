@@ -1,0 +1,131 @@
+@use '../util' as *;
+
+.skills {
+  &__container {
+    row-gap: 0;
+  }
+
+  &__content {
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+  }
+
+  &__icon,
+  &__arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+  }
+
+  &__icon {
+    margin-right: var(--mb-0-75);
+
+    &-tech {
+      color: var(--first-color-alt);
+      font-size: 2rem;
+      fill: var(--first-color-alt);
+
+      animation: fillup 2s infinite ease-in-out;
+
+      @keyframes fillup {
+        0% {
+          opacity: 0.8;
+        }
+        10% {
+          opacity: 0.8;
+        }
+        20% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 0.8;
+        }
+        100% {
+          opacity: 0.8;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: var(--h3-font-size);
+  }
+  &__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+
+  &__arrow {
+    margin-left: auto;
+    transition: 0.4s;
+  }
+
+  &__data {
+    :hover {
+      box-shadow: var(--first-color-lighter) 0px 25px 20px -20px;
+    }
+  }
+
+  &__list {
+    row-gap: 1.5rem !important;
+    padding-left: 2.7rem;
+  }
+
+  &__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+  }
+
+  &__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    align-self: center;
+  }
+  //---dont really need this
+
+  // &__bar,
+  // &__precentage {
+  //   border-radius: 0.25rem;
+  //   height: rem(3);
+  //   background: rgb(238, 238, 238); //var(--first-color)
+  // }
+
+  //  &__bar {
+  // background-color: var(--first-color-lighter);
+  //  }
+
+  //  &__precentage {
+  // display: block;
+  // background-color: var(--first-color);
+  //   }
+
+  //   &__html {
+  //     width: 90%;
+  //   }
+
+  &__close {
+    & .skills__list {
+      height: 0;
+      overflow: hidden;
+    }
+  }
+
+  &__open {
+    & .skills__list {
+      height: max-content;
+      margin-bottom: var(--mb-2-5);
+    }
+
+    & .skills__arrow {
+      transform: rotate(-180deg);
+    }
+  }
+}

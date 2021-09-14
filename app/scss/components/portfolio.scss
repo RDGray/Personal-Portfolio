@@ -1,0 +1,72 @@
+@use '../util' as *;
+
+.portfolio {
+  &__container {
+  }
+
+  &__content {
+    padding: 0 1.5rem;
+    overflow: initial !important;
+  }
+  &__img {
+    width: rem(265);
+    border-radius: 0.5rem;
+    justify-self: center;
+  }
+
+  &__data {
+    text-align: center;
+  }
+  &__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+  }
+  &__description {
+    margin-bottom: var(--mb-0-75);
+  }
+
+  &__button {
+    &:hover {
+      & .button__icon {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+
+  &__icon {
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "" !important;
+}
+
+.swiper-portfolio-icon {
+  font-size: 3rem;
+  color: var(--first-color) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 5rem !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  top: 0 !important;
+  bottom: 20rem !important;
+}
+.swiper-wrapper {
+  box-sizing: border-box !important ;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet {
+  outline: none !important;
+}

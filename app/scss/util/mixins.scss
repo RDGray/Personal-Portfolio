@@ -1,0 +1,42 @@
+/*Source
+https://www.developerdrive.com/10-best-sass-mixins-for-web-developers/
+*/
+
+//====================Vertical Centering====================
+/* SCSS */
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ---------------------Exanple:---------------------
+
+div {
+   @include vertical-center();}*/
+
+//====================Fonts====================
+@mixin font-face($name, $file) {
+  @font-face {
+    font-family: "#{$name}";
+    src: url("../fonts/#{$file}.eot");
+    src: url("../fonts/#{$file}.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/#{$file}.woff") format("woff"),
+      url("../fonts/#{$file}.ttf") format("truetype"),
+      url("../fonts/#{$file}.svg?#webfont") format("svg");
+  }
+}
+
+/*---------------------Example---------------------
+@include font-face("My Font", my-font);
+
+//result:
+
+@font-face {
+   font-family: "My Font";
+   src: url("../fonts/my-font.eot");
+   src: url("../fonts/my-font.eot?#iefix") format("embedded-opentype"), 
+   url("../fonts/my-font.woff") format("woff"), url("../fonts/my-font.ttf") 
+   format("truetype"), url("../fonts/my-font.svg?#webfont") format("svg");}*/

@@ -1,0 +1,45 @@
+@use '../util' as *;
+
+.about {
+  &__container {
+  }
+
+  &__data {
+  }
+  &__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  &__img {
+    width: rem(200);
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+
+    &-title {
+      font-size: var(--h2-font-size);
+      font-weight: var(--font-semi-bold);
+      color: var(--title-color);
+    }
+
+    &-name {
+      font-size: var(--xs-font-size);
+    }
+    &-name,
+    &-title {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

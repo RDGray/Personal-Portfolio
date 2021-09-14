@@ -1,0 +1,82 @@
+@use '../util' as *;
+
+.qualification {
+  &__container {
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: var(--mb-2);
+  }
+
+  &__button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--first-color);
+    }
+
+    &.qualification__active {
+      color: var(--first-color);
+    }
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+  }
+
+  &__sections {
+  }
+
+  &__content {
+  }
+
+  &__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  &__subtitle {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+  }
+  &__calendar {
+    font-size: small;
+    color: var(--text-color-light);
+  }
+  &__rounder {
+    display: inline-block;
+    width: rem(10);
+    height: rem(10);
+    background-color: var(--first-color);
+    border-radius: 50%;
+  }
+  &__line {
+    display: block;
+    width: rem(1);
+    height: 100%;
+    background-color: var(--first-color);
+    transform: translate(4.8px, -7px);
+  }
+
+  & [data-content] {
+    display: none;
+  }
+
+  &__active[data-content] {
+    display: block;
+  }
+}

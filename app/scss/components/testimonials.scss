@@ -1,0 +1,85 @@
+@use '../util' as *;
+
+.testimonial {
+  &__container {
+    margin-right: var(--mb-1-5) !important;
+    margin-left: var(--mb-1-5) !important;
+  }
+
+  &__content {
+  }
+
+  &__data {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__header {
+    flex-direction: row;
+  }
+
+  &__img {
+    width: rem(60);
+    height: rem(60);
+    border-radius: 50%;
+  }
+  &__data,
+  &__header {
+    display: flex;
+    margin-bottom: var(--mb-1);
+  }
+
+  &__name {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-right: 2rem;
+  }
+
+  &__client {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+
+  &__icon {
+    color: var(--first-color);
+    &-star {
+      color: var(--first-color);
+    }
+  }
+
+  &__description {
+    position: relative;
+    margin-bottom: var(--mb-2-5);
+
+    &::before {
+      //   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      //     sans-serif;
+      font-family: "Montserrat", sans-serif;
+      content: "“";
+      display: block;
+      font-size: rem(150);
+      color: var(--first-color) !important;
+      font-weight: var(--font-medium);
+      position: absolute;
+      left: rem(0);
+      top: rem(-90);
+      letter-spacing: -6px;
+      z-index: -1;
+    }
+
+    &::after {
+      //   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      //     sans-serif;
+      font-family: "Montserrat", sans-serif;
+      content: "”";
+      display: block;
+      font-size: rem(150);
+      color: var(--first-color) !important;
+      font-weight: var(--font-medium);
+      position: absolute;
+      right: rem(20);
+      bottom: rem(-175);
+      letter-spacing: -6px;
+    }
+  }
+}

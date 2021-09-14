@@ -1,0 +1,70 @@
+@use '../util' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 0 var(--header-height 0);
+  font-family: var(--body-font);
+  font-size: var(--m-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+//active link in the navigation menu
+.active-link {
+  color: var(--first-color) !important;
+}
+
+//class to change the bg header
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+//show the wrap button
+.show-scroll {
+  bottom: 5rem;
+}
+//Scrollbar
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color) !important;
+  border-radius: 0.3rem;
+}
+scrollbar-color {
+  background-color: var(--scroll-bar-color) !important;
+}
+
+scrollbar-width {
+  width: 0.6rem;
+  border-radius: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.3rem;
+  &:hover {
+    background-color: var(--first-color-second);
+  }
+}

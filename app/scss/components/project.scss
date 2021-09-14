@@ -1,0 +1,95 @@
+@use '../util' as *;
+
+.project {
+  text-align: center;
+
+  &__bg {
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+  }
+
+  &__container {
+  }
+  &__data {
+  }
+  &__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+  }
+
+  &__description {
+    margin-bottom: var(--mb-1-5);
+  }
+
+  &__title,
+  &__description {
+    color: #fff;
+  }
+
+  &__icon {
+  }
+
+  &__img {
+    width: rem(232);
+    object-fit: cover;
+  }
+  &__description--content {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    display: flex;
+
+    margin: 1rem auto 2rem;
+
+    &:nth-of-type(odd) {
+      color: var(--title-color) !important;
+    }
+  }
+
+  &__link {
+    font-size: 2.5rem;
+
+    &:hover {
+      animation: shakeCat 0.5s;
+      animation-iteration-count: infinite;
+
+      @keyframes shakeCat {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+          transform: translate(-2px, 0px) rotate(1deg);
+        }
+        30% {
+          transform: translate(2px, 2px) rotate(0deg);
+        }
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+          transform: translate(-2px, 1px) rotate(0deg);
+        }
+        70% {
+          transform: translate(2px, 1px) rotate(-1deg);
+        }
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+    }
+  }
+}
