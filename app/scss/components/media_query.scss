@@ -68,6 +68,10 @@
 //Medium
 
 @include breakpoint(medium) {
+  .home {
+    display: flex;
+    align-items: center;
+  }
   .home__content {
     grid-template-columns: 1fr max-content;
     text-align: center;
@@ -109,6 +113,10 @@
   }
   .footer__container {
     grid-template-columns: 1fr max-content;
+  }
+  .footer__link {
+    text-align: center;
+    @include vertical-center();
   }
 }
 
@@ -162,17 +170,23 @@
     row-gap: 5rem !important;
   }
   .home__content {
-    padding-top: 5.5rem;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 0rem;
     column-gap: 2rem;
+    text-align: initial;
   }
   .home__blob {
-    width: rem(270);
+    width: rem(250);
   }
   .home__scroll {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
   }
+
   .about__container {
     column-gap: 5rem !important;
   }
@@ -226,5 +240,66 @@
   .footer__container {
     grid-template-columns: 1fr max-content;
   }
+  .footer__bg {
+    padding: 3rem 0 3.5rem;
+  }
+  .footer__copy {
+    margin-top: 4.5rem;
+  }
+  .footer__socials {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    bottom: 15rem;
+    left: 0.5rem;
+    //border info below
+    border: 1px solid hsl(var(--hue-color), 50%, 50%, 0.2);
+    border-radius: 0.5rem;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  .footer__social {
+    margin-bottom: 1rem !important;
+    color: var(--first-color) !important;
+    font-size: 1.3rem;
+    //border info below
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+  }
+  .footer__link {
+    text-align: center;
+    @include vertical-center();
+  }
 }
 //Large
+@include breakpoint(large) {
+  .header,
+  .main,
+  .footer__container {
+    padding: 0 !important;
+  }
+  // .home__blob {
+  //   width: rem(320);
+  // }
+  .services__container {
+    grid-template-columns: repeat(3, rem(300));
+  }
+  .portfolio__content {
+    column-gap: 5rem !important;
+  }
+  .swiper-portfolio-icon {
+    font-size: 3.5rem;
+  }
+  .contact__form {
+    width: rem(450) !important;
+  }
+  .contact__inputs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home {
+    display: flex;
+    align-items: center;
+  }
+}
