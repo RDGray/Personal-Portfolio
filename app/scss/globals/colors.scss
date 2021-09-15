@@ -2,7 +2,7 @@
 
 :root {
   //Main color
-  --hue-color: 215;
+  --hue-color: 220;
 
   //Palette Picker
 
@@ -33,7 +33,7 @@
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --input-color-darken: hsl(var(--hue-color), 70%, 55%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --body-color: hsl(var(--hue-color), 10%, 99%);
   --header-color: hsl(var(--hue-color), 67%, 95%);
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);

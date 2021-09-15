@@ -86,3 +86,7 @@ button {
 textarea {
   resize: none;
 }
+
+:root {
+  --animate-duration: 4s !important;
+}

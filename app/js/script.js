@@ -1,3 +1,23 @@
+//theme color
+
+const colors = document.getElementsByClassName("color__pick");
+let i;
+for (i = 0; i < colors.length; i++) {
+  colors[i].addEventListener("click", changeColor);
+}
+
+function changeColor() {
+  let color = this.getAttribute("data-color");
+  document.documentElement.style.setProperty("--hue-color", color);
+}
+
+////
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("hideEl").classList.toggle("show");
+}
+
 //------------------Menu Elements------------------
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),

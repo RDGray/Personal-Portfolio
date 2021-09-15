@@ -68,3 +68,16 @@ scrollbar-width {
     background-color: var(--first-color-second);
   }
 }
+
+body {
+}
+
+canvas#canvas {
+  position: absolute;
+  opacity: 0.3;
+  filter: blur(x3);
+  width: 98vw;
+  height: 100vh !important;
+  box-shadow: 0 0 rem(60) rem(60) var(--first-color) inset,
+    0 0 rem(60) rem(60) var(--first-color);
+}

@@ -1,0 +1,73 @@
+@use '../util' as *;
+
+.color:hover .color__nav {
+  display: grid !important;
+}
+
+.color {
+  &__nav {
+    display: none;
+
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.5rem;
+    background-color: var(--header-color);
+
+    width: max-content;
+    height: max-content;
+
+    position: fixed;
+
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--text-color-light);
+  }
+
+  &__pick {
+    width: rem(20);
+    height: rem(20);
+    border-radius: 50%;
+
+    margin: 0.5rem auto;
+    display: block;
+
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 799px) {
+  .color__nav {
+    grid-template-columns: repeat(3, 1fr);
+    position: fixed;
+    bottom: 0%;
+    right: 7.2rem;
+  }
+  .color:hover .color__nav {
+    display: grid !important;
+  }
+  .color:active .color__nav {
+    display: grid !important;
+  }
+}
+
+#blue {
+  background: rgb(77, 129, 207) !important;
+}
+
+#red {
+  background-color: rgb(187, 66, 66) !important;
+}
+
+#orange {
+  background-color: orange !important;
+}
+
+#purple {
+  background-color: purple !important;
+}
+#teal {
+  background-color: rgb(57, 184, 184) !important;
+}
+
+.uil-edit {
+  color: var(--first-color) !important;
+}

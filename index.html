@@ -15,6 +15,8 @@
     <!--Swiper CSS -->
     <link rel="stylesheet" href="dist/css/vendor/swiper-bundle.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
 </head>
 
@@ -78,12 +80,40 @@
             </div>
 
             <div class="nav__btns">
+
+                <div class="color">
+
+                    <i class="uil uil-edit change-theme change-theme--color" id="hideEl"></i>
+                    <ul class="color__nav">
+
+                        <li class="color__pick" id="blue" data-color="220">
+
+                        </li>
+                        <li class="color__pick" id="red" data-color="0">
+
+                        </li>
+                        <li class="color__pick" id="orange" data-color="33">
+
+                        </li>
+                        <li class="color__pick" id="purple" data-color="258">
+
+                        </li>
+                        <li class="color__pick" id="teal" data-color="178">
+
+                        </li>
+                    </ul>
+                </div>
                 <!-- Toggle Night/Day -->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
+
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps nav__icon"></i>
                 </div>
+                <!-- Change Theme -->
+
+
+
             </div>
         </nav>
 
@@ -93,7 +123,7 @@
 
         <!------------------------- HOME ------------------------->
         <section class="home section" id="home">
-
+            <canvas id="canvas">Canvas not supported.</canvas>
             <div class="home__container container grid">
 
                 <div class="home__content grid">
@@ -114,7 +144,7 @@
 
                     </div> -->
 
-                    <div class="home__img" style="position:relative;">
+                    <div class="home__img animate__animated animate__fadeIn">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
@@ -139,11 +169,13 @@
 
                     </div>
 
-                    <div class=" home__data">
+                    <div class="home__data animate__animated animate__fadeIn">
+                        <!--  -->
+
+                        <!--  -->
                         <h1 class="home__title">Hi, I'm Roman</h1>
-                        <h3 class="home__subtitle">Frontend Developer</h3>
-                        <p class="home__description">High level experience in web design and development knowledge,
-                            producing quality work</p>
+                        <h3 class="home__subtitle">Frontend Enthusiast</h3>
+                        <p class="home__description">Do you want to develop an app?</p>
                         <a href="#contact" class="button button--flex">
                             Contact Me<i class="uil uil-envelope-alt button__icon"></i>
                         </a>
@@ -169,7 +201,8 @@
             </div>
         </section>
         <!------------------------- ABOUT ------------------------->
-        <section class="about section" id="about">
+        <section class="about section " id="about">
+
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My Introduction</span>
 
@@ -1112,6 +1145,7 @@
 
     <!------------------------- FOOTER ------------------------->
     <footer class="footer">
+
         <div class="footer__bg">
             <div class="footer__container container grid">
 
@@ -1178,6 +1212,8 @@
 
     <!------------------------- MAIN JS ------------------------->
     <script src="dist/js/script.js"></script>
+
+    <script src="dist/js/vendor/animate.js"></script>
 
 </body>
 
