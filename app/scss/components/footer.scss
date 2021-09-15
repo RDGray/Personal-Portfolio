@@ -8,7 +8,7 @@
     padding: 2rem 0 3rem;
   }
   &__container {
-    row-gap: 3.5rem !important;
+    row-gap: 1.5rem !important;
   }
   &__title {
     font-size: var(--h1-font-size);
@@ -21,9 +21,11 @@
     color: var(--first-color-lighter);
   }
   &__links {
+    margin-right: 1rem;
+    margin-bottom: 3rem;
     display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
+    flex-direction: row;
+    column-gap: 1.5rem;
     color: var(--first-color-lighter);
   }
   &__link {
@@ -34,7 +36,7 @@
     }
   }
   &__socials {
-    margin-bottom: var(--mb-3);
+    margin: var(--mb-1) 0;
   }
   &__social {
     font-size: 1.25rem;
@@ -47,7 +49,7 @@
   }
   &__copy {
     font-size: var(--s-font-size);
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
   }
 }

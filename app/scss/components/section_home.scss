@@ -7,7 +7,8 @@
 
   &__content {
     //display grid added as class
-    grid-template-columns: 0.5fr 3fr;
+    grid-template-columns: 1fr;
+
     padding-top: 3.5rem;
     align-items: center;
   }
@@ -69,6 +70,19 @@
 
       &:hover {
         transform: translateY(0.5rem);
+
+        polygon {
+          fill: var(--first-color-alt);
+          transition: all 0.2s ease-out;
+
+          &.arrow-bottom {
+            transform: translateY(-18px);
+          }
+
+          &.arrow-top {
+            transform: translateY(18px);
+          }
+        }
       }
     }
     &-mouse {
@@ -92,21 +106,6 @@
 #more-arrows {
   width: rem(74);
   height: rem(65);
-
-  &:hover {
-    polygon {
-      fill: var(--first-color-alt);
-      transition: all 0.2s ease-out;
-
-      &.arrow-bottom {
-        transform: translateY(-18px);
-      }
-
-      &.arrow-top {
-        transform: translateY(18px);
-      }
-    }
-  }
 }
 
 polygon {
