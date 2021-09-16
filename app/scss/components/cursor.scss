@@ -1,0 +1,21 @@
+/**
+ * Demo styles only
+ */
+
+/**
+ * End demo styles
+ */
+
+/**
+ * Simple Radial Mouse Cursor
+ */
+#mouse-circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin: -32px 0px 0px -32px;
+  //   border: 1px solid var(--first-color);
+  border-radius: 50%;
+  pointer-events: none !important;
+  box-shadow: var(--first-color) 0px 22px 70px 4px;
+}

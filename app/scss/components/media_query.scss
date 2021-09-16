@@ -69,11 +69,12 @@
 
 @include breakpoint(medium) {
   .home {
+    justify-content: center;
     display: flex;
     align-items: center;
   }
   .home__content {
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 2fr 1fr;
     text-align: center;
   }
   .home__data {
@@ -280,9 +281,9 @@
   .footer__container {
     padding: 0 !important;
   }
-  // .home__blob {
-  //   width: rem(320);
-  // }
+  .home__blob {
+    width: rem(320);
+  }
   .services__container {
     grid-template-columns: repeat(3, rem(300));
   }

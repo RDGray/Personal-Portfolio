@@ -93,8 +93,8 @@
       ctx.save();
       ctx.globalCompositeOperation = "lighter";
       ctx.globalAlpha = this.ga;
-      //ctx.fillStyle = 'rgb(123, 252, 100)';
-      ctx.fillStyle = "white";
+      // ctx.fillStyle = "linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c)";
+      ctx.fillStyle = "gray";
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
       ctx.fill();
