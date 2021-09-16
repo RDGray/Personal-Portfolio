@@ -120,3 +120,21 @@ polygon {
     opacity: 0.5;
   }
 }
+
+.home__description {
+  position: relative;
+}
+
+.my-app {
+  display: none;
+  position: absolute;
+  left: -80px;
+  top: -22px;
+  width: rem(100);
+  height: rem(100);
+}
+.home__description:hover .my-app {
+  left: 17rem;
+  display: inline-block;
+  opacity: 0.3 !important;
+}

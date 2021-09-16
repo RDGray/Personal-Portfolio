@@ -110,15 +110,16 @@ modalCloses.forEach((modalClose) => {
 });
 
 //------------------Portfolio swiper------------------
-
-let swiperPortfolio = new Swiper(".portfolio__container", {
-  grabCursor: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+var swiper = new Swiper(".portfolio-slider", {
+  spaceBetween: 30,
+  effect: "fade",
+  loop: true,
+  mousewheel: {
+    invert: false,
   },
+  // autoHeight: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".portfolio-slider__pagination",
     clickable: true,
   },
 });
