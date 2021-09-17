@@ -198,6 +198,12 @@
   .about__info {
     justify-content: space-between;
   }
+  .about__description {
+    text-align: left;
+  }
+  .about__buttons {
+    justify-content: left;
+  }
 
   .qualification__tabs {
     justify-content: space-evenly;
@@ -285,7 +291,7 @@
     padding: 0 !important;
   }
   .home__blob {
-    width: rem(320);
+    width: rem(290);
   }
   .services__container {
     grid-template-columns: repeat(3, rem(300));

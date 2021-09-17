@@ -121,15 +121,11 @@ polygon {
   }
 }
 
-.home__description {
-  position: relative;
-}
-
 .my-app {
   display: none;
   position: absolute;
-  left: -80px;
-  top: -22px;
+  left: 0;
+  top: 4.5rem;
   width: rem(100);
   height: rem(100);
 }
