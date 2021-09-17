@@ -12,7 +12,8 @@
     min-height: rem(400);
     width: 95%;
     position: relative;
-
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--container-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     padding: rem(25);

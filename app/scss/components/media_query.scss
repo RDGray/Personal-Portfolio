@@ -43,9 +43,9 @@
   .services__modal {
     padding: 0.5rem !important;
   }
-  .project__img {
-    width: rem(200);
-  }
+  // .project__img {
+  //   width: rem(200);
+  // }
   .testimonial__data,
   .testimonial__header {
     flex-direction: column;
@@ -224,20 +224,20 @@
   .portoflio__img {
     width: rem(320);
   }
-  .project__bg {
-    background: none !important;
-  }
-  .project__container {
-    background-color: var(--first-color-second);
-    border-radius: 1rem;
-    padding: 3rem 2.5rem 0 !important;
-    grid-template-columns: 1fr max-content;
-    column-gap: 3rem;
-  }
+  // .project__bg {
+  //   background: none !important;
+  // }
+  // .project__container {
+  //   background-color: var(--first-color-second);
+  //   border-radius: 1rem;
+  //   padding: 3rem 2.5rem 0 !important;
+  //   grid-template-columns: 1fr max-content;
+  //   column-gap: 3rem;
+  // }
 
-  .project__data {
-    padding: 2rem !important;
-  }
+  // .project__data {
+  //   padding: 2rem !important;
+  // }
   .footer__container {
     grid-template-columns: 1fr max-content;
   }
@@ -276,6 +276,9 @@
 }
 //Large
 @include breakpoint(large) {
+  .container {
+    max-width: rem(1000) !important;
+  }
   .header,
   .main,
   .footer__container {
