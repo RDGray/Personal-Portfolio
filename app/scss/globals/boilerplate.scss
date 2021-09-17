@@ -96,3 +96,8 @@ input {
 .text-center {
   text-align: center;
 }
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
