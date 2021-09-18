@@ -126,24 +126,24 @@ var swiper = new Swiper(".portfolio-slider", {
 
 //------------------Project swiper------------------
 
-let swiperTestimonial = new Swiper(".testimonial__container", {
-  grabCursor: true,
+// let swiperTestimonial = new Swiper(".testimonial__container", {
+//   grabCursor: true,
 
-  autoplay: {
-    delay: 5500,
-    disableOnInteraction: true,
-  },
+//   autoplay: {
+//     delay: 5500,
+//     disableOnInteraction: true,
+//   },
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true,
-  },
-  // breakpoints: {
-  //  568: {
-  //    slidesPerView: 2,
-  //   },
-  //},
-});
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//     hide: true,
+//   },
+//   // breakpoints: {
+//   //  568: {
+//   //    slidesPerView: 2,
+//   //   },
+//   //},
+// });
 
 //--------------------------Autoscroll for text area--------------------------
 const textArea = document.querySelectorAll("[data-autoresize]");

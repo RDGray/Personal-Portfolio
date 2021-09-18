@@ -1,6 +1,7 @@
 @use '../util'as *;
 
 .button {
+  cursor: pointer;
   display: inline-block;
   background-color: var(--first-color);
   color: #fff !important;

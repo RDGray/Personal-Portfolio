@@ -69,15 +69,20 @@ scrollbar-width {
   }
 }
 
-canvas#canvas {
-  position: absolute;
-  opacity: 0.09;
+//Background
+canvas#stars {
+  position: fixed;
   filter: blur(x4);
-  width: 98vw;
-  height: 100vh !important;
-  box-shadow: 0 0 rem(60) rem(60) var(--first-color) inset,
-    0 0 rem(60) rem(60) var(--first-color);
+  width: 100%;
+  height: 100%;
+  opacity: 0.09;
+  z-index: -1;
+
+  //   box-shadow: 0 0 rem(60) rem(60) var(--first-color) inset,
+  //     0 0 rem(60) rem(60) var(--first-color);
 }
+
+//--Background
 
 .project__link {
   font-size: 2.5rem;
