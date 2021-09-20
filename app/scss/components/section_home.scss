@@ -102,25 +102,6 @@
   }
 }
 
-//arrow
-#more-arrows {
-  width: rem(74);
-  height: rem(65);
-}
-
-polygon {
-  fill: var(--first-color);
-  transition: all 0.2s ease-out;
-
-  &.arrow-middle {
-    opacity: 0.75;
-  }
-
-  &.arrow-top {
-    opacity: 0.5;
-  }
-}
-
 .my-app {
   display: none;
   position: absolute;
@@ -128,9 +109,18 @@ polygon {
   top: 4.5rem;
   width: rem(100);
   height: rem(100);
+  transition-property: all 0.3s ease !important;
+  --animate-delay: 0s;
 }
+
 .home__description:hover .my-app {
   left: 17rem;
   display: inline-block;
   opacity: 0.3 !important;
+}
+
+@media screen and (max-width: 799px) {
+  .my-app {
+    top: 0;
+  }
 }
