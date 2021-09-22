@@ -1,4 +1,4 @@
-@use '../util' as *;
+@use "../util" as *;
 
 html {
   font-size: 100%;
@@ -72,7 +72,7 @@ scrollbar-width {
 //Background
 canvas#stars {
   position: fixed;
-  filter: blur(x4);
+  filter: blur(3px);
   width: 100%;
   height: 100%;
   opacity: 0.09;

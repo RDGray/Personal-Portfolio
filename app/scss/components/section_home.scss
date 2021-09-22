@@ -1,4 +1,4 @@
-@use '../util' as *;
+@use "../util" as *;
 
 .home {
   &__container {
@@ -109,7 +109,6 @@
   top: 4.5rem;
   width: rem(100);
   height: rem(100);
-  transition-property: all 0.3s ease !important;
   --animate-delay: 0s;
 }
 
