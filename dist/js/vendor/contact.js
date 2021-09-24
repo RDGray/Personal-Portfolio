@@ -29,5 +29,3 @@ window.onload = function () {
       );
     });
 };
-
-console.log((femail.value = ""));
