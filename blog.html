@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Rd</title>
+    <link rel="icon" type="image/png" href="/img/RD.JPG">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!--Swiper CSS -->
+    <link rel="stylesheet" href="dist/css/vendor/swiper-bundle.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LEHKY23QF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8LEHKY23QF');
+    </script>
+
+</head>
+
+<body>
+    <canvas id="stars">Canvas not supported.</canvas>
+
+    <div id="mouse-circle"></div>
+    <!-- Hello there. Thank you for checking my website! Take your time, enjoy. 
+    Here is a small Haiku.-->
+    <!-- Serious error. -->
+    <!-- All shortcuts have disappeared. -->
+    <!-- Screen. Mind. Both are blank.  -->
+
+
+    <!------------------------- HEADER ------------------------->
+    <header class="header" id="header">
+
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">RD</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Qualification
+
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> Contact Me
+                        </a>
+                    </li>
+
+                </ul>
+                <i class="uil uil-times nav__close " id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+
+                <div class="color">
+
+                    <i class="uil uil-edit change-theme change-theme--color" id="hideEl"></i>
+                    <ul class="color__nav">
+
+                        <li class="color__pick" id="blue" data-color="220">
+
+                        </li>
+                        <li class="color__pick" id="red" data-color="0">
+
+                        </li>
+                        <li class="color__pick" id="orange" data-color="33">
+
+                        </li>
+                        <li class="color__pick" id="purple" data-color="250">
+
+                        </li>
+                        <li class="color__pick" id="yellow" data-color="50">
+
+                        </li>
+                        <li class="color__pick" id="ocean" data-color="190">
+
+                        </li>
+                    </ul>
+                </div>
+                <!-- Toggle Night/Day -->
+
+
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps nav__icon"></i>
+                </div>
+
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!------------------------- FOOTER ------------------------->
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+
+                <div>
+                    <h1 class="footer__title">Roman</h1>
+                    <span class="footer__subtitle">Frontend Enthusiast</span>
+
+
+                    <div class="slider">
+                        <input id="speed" type="range" min="0.5" max="30" value="1" step="0.5">
+                    </div>
+
+                    <div class="footer__socials">
+
+                        <a href="https://github.com/RDGray" target="_blank" class="footer__social">
+                            <i class="uil uil-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/romansirghii/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+
+                        </a>
+
+                        <a href="https://t.me/RomanRd" target="_blank" class="footer__social">
+                            <i class="uil uil-telegram-alt"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/profile.php?id=100004233617080" target="_blank"
+                            class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <ul class="footer__links">
+
+                    <!-- <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li> -->
+
+
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#contact" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <p class="footer__copy">&#169; Roman Rd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-------------------------Wrap to top button ------------------------->
+
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-angle-up scrollup__icon scrollup__icon--up"></i>
+    </a>
+
+    <!------------------------- SWIPER JS ------------------------->
+    <script src="dist/js/vendor/swiper-bundle.min.js"></script>
+
+    <!------------------------- MAIN JS ------------------------->
+    <script src="dist/js/script.js"></script>
+
+    <!------------------------- Animate JS ------------------------->
+    <script src="dist/js/vendor/animate.js"></script>
+
+    <!------------------------- Cursor JS ------------------------->
+    <script src="dist/js/vendor/cursor.js"></script>
+
+    <!--------------------------- EmailJS --------------------------->
+    <script src="/dist/js/vendor/contact.js"></script>
+
+</body>
+
+</html>

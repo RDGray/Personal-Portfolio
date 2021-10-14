@@ -1,3 +1,14 @@
+//voice lol
+/*
+const speak = (msg) => {
+  const sp = new SpeechSynthesisUtterance(msg);
+  [sp.voice] = speechSynthesis.getVoices();
+  speechSynthesis.speak(sp);
+};
+
+speak("Hi. Thank you for looking at my web-site");
+*/
+
 //theme color
 
 const colors = document.getElementsByClassName("color__pick");
