@@ -1,4 +1,4 @@
-@use '../util' as *;
+@use "../util" as *;
 
 .portfolio {
   &__socials {
@@ -68,7 +68,7 @@
 
     // NEW one
     &__img {
-      // width: 40%;
+      width: 40%;
       max-width: rem(300);
       height: rem(300);
       flex-shrink: 0;
@@ -89,7 +89,7 @@
       }
 
       @media screen and (max-width: 992px) {
-        // width: 45%;
+        width: 45%;
       }
       @media screen and (max-width: 768px) {
         transform: translateY(-50%);
