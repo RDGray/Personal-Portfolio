@@ -233,6 +233,7 @@
 
       &.swiper-pagination-bullets .swiper-pagination-bullet {
         margin: 8px 0;
+
         @media screen and (max-width: 768px) {
           margin: 0 5px;
         }
@@ -243,7 +244,7 @@
         height: 11px;
         display: block;
         border-radius: 10px;
-        background: var(--first-color-lighter);
+        background: var(--first-color);
         opacity: 0.2;
         transition: all 0.3s;
         &-active {

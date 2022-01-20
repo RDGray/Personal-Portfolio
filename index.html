@@ -36,8 +36,8 @@
 </head>
 
 <body>
-    <canvas id="stars">Canvas not supported.</canvas>
-
+    <!-- <canvas id="stars">Canvas not supported.</canvas> -->
+    <video src="/img/Stars.mov" autoplay loop muted class="star-video"></video>
     <div id="mouse-circle"></div>
     <!-- Hello there. Thank you for checking my website! Take your time, enjoy. 
     Here is a small Haiku.-->
@@ -779,7 +779,7 @@
                                 </div>
                                 <div class="portfolio__socials">
                                     <a target="_blank" href="https://z-horde-project.netlify.app/"
-                                        class="button button--flex button--small">Try It Out</a>
+                                        class="button button--flex button--small">Live Preview</a>
                                     <a target="_blank" href="https://github.com/RDGray/zombie-z">
                                         <i class="uil uil-github project__link"></i>
                                     </a>
@@ -791,19 +791,25 @@
                         <!-- II Slide -->
                         <div class="portfolio-slider__item swiper-slide">
                             <div class="portfolio-slider__img">
-                                <img class="portfolio-slider__img--inner" src="https://via.placeholder.com/500/500"
-                                    alt="">
+                                <img class="portfolio-slider__img--inner" src="img/budget planner.PNG" alt="">
+                                <div class="portfolio__tech">
+                                    <ul class="portfolio__tags">
+                                        <li><a href="#" class="portfolio__tag">React.js</a></li>
+                                        <li><a href="#" class="portfolio__tag">React Bootstrap</a></li>
+                                        <li><a href="#" class="portfolio__tag">Local Storage</a></li>
+
+                                    </ul>
+                                </div>
                             </div>
                             <div class="portfolio-slider__content">
 
-                                <div class="portfolio-slider__title">Work In progress</div>
-                                <div class="portfolio-slider__text">Lorem ipsum dolor sit amet consectetur,
-                                    adipisicing
-                                    elit. Recusandae voluptate repenpm install -g mdb-clillendus magni illo ea animi?
+                                <div class="portfolio-slider__title">Budget Planner</div>
+                                <div class="portfolio-slider__text">A simple budget planner app built with React.
                                 </div>
                                 <div class="portfolio__socials">
-                                    <a href="#" class="button button--flex button--small">READ MORE</a>
-                                    <a href="https://github.com/">
+                                    <a target="_blank" href="https://budget-helper.netlify.app/"
+                                        class="button button--flex button--small">Live Preview</a>
+                                    <a target="_blank" href="https://github.com/RDGray/budget-app">
                                         <i class="uil uil-github project__link"></i>
                                     </a>
                                 </div>
@@ -1000,9 +1006,9 @@
                     <span class="footer__subtitle">Frontend Enthusiast</span>
 
 
-                    <div class="slider">
+                    <!-- <div class="slider">
                         <input id="speed" type="range" min="0.5" max="30" value="1" step="0.5">
-                    </div>
+                    </div> -->
 
                     <div class="footer__socials">
 
